@@ -7,7 +7,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        'react-router-dom',
         'lightgallery',
         'lightgallery/css/lightgallery.css',
         'lightgallery/css/lg-zoom.css',
@@ -15,13 +14,21 @@ export default defineConfig({
       ],
       output: {
         globals: {
-          'react-router-dom': 'ReactRouterDOM',
           'lightgallery': 'lightGallery',
         },
+        format: 'es',
+        entryFileNames: '[name]-[hash].js',
+        chunkFileNames: '[name]-[hash].js',
+        assetFileNames: '[name]-[hash].[ext]',
       },
     },
   },
   optimizeDeps: {
-    include: ['lightgallery'],
+    include: ['lightgallery', 'react-router-dom'],
+  },
+  resolve: {
+    alias: {
+      'react-router-dom': 'react-router-dom/dist/index.js',
+    },
   },
 });

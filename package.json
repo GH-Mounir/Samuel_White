@@ -9,6 +9,12 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all",
+    "last 2 versions"
+  ],
   "dependencies": {
     "i18next": "^23.10.1",
     "i18next-browser-languagedetector": "^7.2.0",
