@@ -1,34 +1,38 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import autoprefixer from 'autoprefixer';
+import tailwindcss from 'tailwindcss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
+    target: 'esnext',
     rollupOptions: {
-      external: [
-        'lightgallery',
-        'lightgallery/css/lightgallery.css',
-        'lightgallery/css/lg-zoom.css',
-        'lightgallery/css/lg-thumbnail.css',
-      ],
       output: {
-        globals: {
-          'lightgallery': 'lightGallery',
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'gallery-vendor': ['lightgallery', 'react-photo-album', 'yet-another-react-lightbox'],
         },
-        format: 'es',
-        entryFileNames: '[name]-[hash].js',
-        chunkFileNames: '[name]-[hash].js',
-        assetFileNames: '[name]-[hash].[ext]',
       },
     },
   },
   optimizeDeps: {
-    include: ['lightgallery', 'react-router-dom'],
+    include: [
+      'react-router-dom',
+      'lightgallery',
+      'react-photo-album',
+      'yet-another-react-lightbox',
+    ],
   },
-  resolve: {
-    alias: {
-      'react-router-dom': 'react-router-dom/dist/index.js',
+  css: {
+    postcss: {
+      plugins: [
+        autoprefixer({
+          overrideBrowserslist: ['> 1%', 'last 2 versions', 'not dead'],
+        }),
+        tailwindcss,
+      ],
     },
   },
 });
