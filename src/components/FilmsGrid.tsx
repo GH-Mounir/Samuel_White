@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { films } from '../data/films';
 import { useTranslation } from 'react-i18next';
-import PhotoAlbum from 'react-photo-album';
+import FilmCard from './FilmCard';
+import LightGallery from 'lightgallery/react';
 
-// import styles
+// Import styles manually
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-fullscreen.css';
 import 'lightgallery/css/lg-thumbnail.css';
-
-import FilmCard from './FilmCard';
 
 const FilmsGrid: React.FC = () => {
   const { t } = useTranslation();
