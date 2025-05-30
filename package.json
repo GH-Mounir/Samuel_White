@@ -17,6 +17,7 @@
     "react-dom": "^18.3.1",
     "react-i18next": "^14.1.0",
     "react-photo-album": "^3.1.0",
+    "react-router-dom": "^7.6.1",
     "yet-another-react-lightbox": "^3.23.2"
   },
   "devDependencies": {

@@ -13,6 +13,12 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: 'index.html',
+      external: ['react-router-dom'],
+      output: {
+        globals: {
+          'react-router-dom': 'ReactRouterDOM',
+        },
+      },
     },
   },
 });
