@@ -12,7 +12,7 @@ import 'lightgallery/css/lg-thumbnail.css';
 const FilmsGrid: React.FC = () => {
   const { t } = useTranslation();
   // Get category keys directly from the translation file, excluding 'all'
-  const categoryKeys = Object.keys(t('films.categories', { returnObjects: true })).filter(key => key !== 'all');
+  const categoryKeys = Object.keys(t('projects.categories', { returnObjects: true })).filter(key => key !== 'all');
   // Include 'all' at the beginning for the default category button
   const allCategories = ['all', ...categoryKeys];
 
@@ -67,7 +67,7 @@ const FilmsGrid: React.FC = () => {
     <section id="films" className="bg-black py-20 px-4 sm:px-6 lg:px-8" dir={t('direction')}>
       <div className="max-w-7xl mx-auto">
         <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-10'}`}>
-          <h2 className="text-3xl font-bold text-white mb-2 tracking-wide">{t('films.title')}</h2>
+          <h2 className="text-3xl font-bold text-white mb-2 tracking-wide">{t('projects.title')}</h2>
           <div className="w-16 h-0.5 bg-red-600 mb-10" />
 
           <div className="mb-10 flex flex-wrap gap-2">
@@ -82,7 +82,7 @@ const FilmsGrid: React.FC = () => {
                 }`}
               >
                 {/* Use the category key to get the translation directly */}
-                {t(`films.categories.${categoryKey}`)}
+                {t(`projects.categories.${categoryKey}`)}
               </button>
             ))}
           </div>
