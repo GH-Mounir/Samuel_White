@@ -31,7 +31,7 @@ const FilmsGrid: React.FC = () => {
       { threshold: 0.1 }
     );
 
-    const section = document.getElementById('films');
+    const section = document.getElementById('projects');
     if (section) observer.observe(section);
 
     return () => {
@@ -64,7 +64,7 @@ const FilmsGrid: React.FC = () => {
   console.log('First 3 photo objects:', photos.slice(0, 3));
 
   return (
-    <section id="films" className="bg-black py-20 px-4 sm:px-6 lg:px-8" dir={t('direction')}>
+    <section id="projects" className="bg-black py-20 px-4 sm:px-6 lg:px-8" dir={t('direction')}>
       <div className="max-w-7xl mx-auto">
         <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-10'}`}>
           <h2 className="text-3xl font-bold text-white mb-2 tracking-wide">{t('projects.title')}</h2>
