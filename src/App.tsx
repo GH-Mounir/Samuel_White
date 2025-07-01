@@ -21,11 +21,11 @@ function App() {
         <FilmsGrid />
         <Biography />
         <About />
-        <section id="gallery-section">
-          <GalleryPage />
-        </section>
         <Contact />
       </main>
+      <section id="gallery-section">
+        <GalleryPage />
+      </section>
       <Footer />
     </div>
   );

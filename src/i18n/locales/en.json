@@ -1,0 +1,183 @@
+{
+  "direction": "ltr",
+  "nav": {
+    "home": "HOME",
+    "films": "FILMS",
+    "biography": "BIOGRAPHY",
+    "about": "ABOUT",
+    "contact": "CONTACT",
+    "gallery": "Gallery"
+  },
+  "hero": {
+    "title": "SAMUEL SKHIEH",
+    "subtitle": "DIRECTOR | FILMMAKER",
+    "viewWork": "VIEW WORK"
+  },
+  "films": {
+    "title": "FILMOGRAPHY",
+    "categories": {
+      "all": "ALL",
+      "featureFilm": "FEATURE FILM",
+      "documentary": "DOCUMENTARY",
+      "shortFilm": "SHORT FILM",
+      "mediumFilm": "MEDIUM FILM",
+      "theaterLab": "CINEMATIC-THEATRICAL LABORATORY",
+      "series": "SERIES",
+      "promotional": "PROMOTIONAL / ADVERTISING",
+      "experimental": "EXPERIMENTAL SHORT FILM",
+      "musicVideo": "MUSIC VIDEO",
+      "theaterPlay": "THEATER PLAY",
+      "juryMember": "JURY MEMBER"
+    },
+    "watchButton": "WATCH",
+    "films": {
+      "theOath": {
+        "title": "The Oath",
+        "description": "The film tells the story of a child caught between cinema and reality, as industrial pollution threatens the natural world."
+      },
+      "whatIf": {
+        "title": "What If",
+        "description": "Theater Play. Role: Audiovisual Direction."
+      },
+      "weaning": {
+        "title": "Weaning",
+        "description": "The mother, Inanna, lives in her own world, experiencing denial and detachment as the departure of one of her children approaches. She desperately tries to delay this moment."
+      },
+      "juryMember2023": {
+        "title": "Jury Member - Mediterranean Cinema Festival 2023",
+        "description": "Role: Jury Member - Official Feature Film Competition - 18th Edition"
+      },
+      "soulsOnTheOtherStrand": {
+        "title": "Souls on the Other Strand",
+        "description": "Short Documentary Film. Synopsis: A tribute inspired by a scene from Apocalypse Now, the film explores the hidden conflict between ruling forces and the people who become fuel for wars. Amidst violence and symbolic imagery, the village madman uncovers the truth ignored by all, while the \"barn owner\" remains a symbol of the hidden power orchestrating events from behind the scenes."
+      },
+      "dreamInACauldon": {
+        "title": "Dream in a Cauldron",
+        "description": "Short Fiction Promotional Film. Story: A film about the workers of the steel factory for metal industries, highlighting their daily challenges under war and their determination to continue despite the risks."
+      },
+      "fromTheWombOfFire": {
+        "title": "From the Womb of Fire: The Birth",
+        "description": "Promotional Spot. Story: Documenting the moment steel transforms into metal from melting inside a giant furnace through an explosive charge, focusing on the silence, proximity, and the tremendous sound that reflects the greatness of the event."
+      },
+      "whatIsPlanted": {
+        "title": "What is Planted in Our Souls Grows on Our Faces",
+        "description": "Advertising Spot. Story: On the occasion of the tenth anniversary of the steel plant for metal industries, we have captured genuine moments of long-time workers across various departments and specialties, highlighting their efforts, whether intellectual or physical."
+      },
+      "theReturn": {
+        "title": "The Return",
+        "description": "Feature Film (Epic / Apocalyptic). Story: The story unfolds between two different worlds, marking both the beginning and the end. The First World: Set in the distant past... The Second World: Set in the near future, around the year 2060, after biological and military wars have devastated the world... Note: 35% of the film was shot, but production was halted due to the COVID-19 pandemic and lockdown restrictions."
+      },
+      "moralTerror": {
+        "title": "MORALTERROR",
+        "description": "Experimental Short Film. Synopsis: A tribute inspired by a scene from Apocalypse Now, the film explores the hidden conflict between ruling forces and the people who become fuel for wars."
+      },
+      "winterPerfume": {
+        "title": "WINTER PERFUME",
+        "description": "MUSIC VIDEO. Description: The video features scenes set between a museum and the seashore, where the main character recalls figures from the film Son of the Earth, transforming them into museum exhibits. This visual journey extends the cinematic project through music and imagery, creating a harmonious blend that enhances the essence of the composition Winter Fragrance."
+      },
+      "gypsiesOfWar": {
+        "title": "Gypsies of War",
+        "description": "Short Promotional Film. Story: The film deals with the issue of illegal immigration in Libya, highlighting the efforts of the Libyan authorities in combating it and the challenges they face in addressing this phenomenon."
+      },
+      "sonOfTheGroundPart2": {
+        "title": "Son of the Ground Part Two",
+        "description": "SHORT FILM. Synopsis: \"Son of the ground\" lives in a chaotic city governed by the tyrannical leader \"El Capo,\" who pursues the original violin and the musical manuscript, believing it grants him absolute power. While Son of the ground tries to protect the knowledge from the control of tyranny, the conflict reaches its climax when the grand master is sentenced to death for refusing to reveal the musical secrets."
+      },
+      "essoudAyouno": {
+        "title": "Essoud Ayouno",
+        "description": "MUSIC VIDEO. Synopsis: Gypsy-inspired aesthetics are revived as a collective memory, with vibrant colors and free-spirited dances enhancing the dreamlike quality of the story."
+      },
+      "pathOfDeath": {
+        "title": "Path of Death",
+        "description": "Series - Copy zero. Story: A fierce conflict erupts between families over illegal smuggling operations in the border area in Tunisia, where a network of influence and betrayal is formed within the dangerous world of crime."
+      },
+      "sonOfTheGroundPart1": {
+        "title": "son of the ground part one",
+        "description": "medium FILM. Story: \"Son of the Ground\" carries a magical musical instrument that symbolizes peace and resistance... In the midst of this conflict, the search for the original instrument and the secret manuscript becomes a decisive battle between the forces of oppression and the voice of freedom."
+      },
+      "wardNo6": {
+        "title": "WARD NO.6",
+        "description": "Drama Lab (Cinema - Theater). Story: Set in a small psychiatric hospital for women inside a convent, where the new director is confronted with treatment methods based on strict religious doctrines, folk magic, and inherited social superstitions."
+      },
+      "laswadMagrouni": {
+        "title": "Laswad Magrouni",
+        "description": "The song Laswad Magrouni is inspired by Maghrebian folk heritage, reinvented with a fusion of traditional melodies and modern rap beats, portraying an intense rivalry between a tribal leader and a humble young man over the love of a mesmerizing woman with striking black eyes"
+      },
+      "theShy": {
+        "title": "The Shy",
+        "description": "In a modest tourist inn in southern Tunisia, a shy and troubled young man silently observes the guests. As his inner turmoil intensifies, he decides to kidnap one of them, setting off a gripping chain of events that unravels his deep psychological struggles"
+      }
+    }
+  },
+  "biography": {
+    "title": "BIOGRAPHY",
+    "role": "Independent Filmmaker & Producer, Screenwriter, Actor",
+    "quote": "The Godfather became an artistic and productive reference for me, shaping my understanding of cinematic storytelling.",
+    "notableWorks": "Notable Works",
+    "paragraph1": "Samuel Skhieh, an independent filmmaker and producer of Syrian origin, was born in 1987 in Latakia, Syria. He studied economics but found his true calling in the arts, beginning his journey in university theater and various independent projects. His passion for cinema was ignited early on, and he was greatly influenced by the film 'The Godfather' by Francis Ford Coppola, which became an artistic and productive reference for him.",
+    "paragraph2": "Since there were no formal film schools in Syria, he started making his own films independently and developed his skills in a self-taught manner. He directed two short films in Syria before moving to Tunisia in 2016 during the Syrian war, continuing to make his independent short films. Between 2017 and 2018, he directed three short films.",
+    "paragraph3": "He worked on the production and direction of a cinematic-theatrical laboratory titled 'Ward - N°6', which received widespread acclaim from the artistic and cultural community. He then ventured into directing music videos and commercials with famous artists, garnering millions of views.",
+    "paragraph4": "He also created a remarkable experience with the violinist and composer Mohamed Al-Gharbi in a two-part musical short film titled 'Son of the ground', the first of its kind in the Arab world celebrating instrumental music. He made his debut in series by directing and writing the first episode of the series 'Path of Death'.",
+    "paragraph5": "He worked on the production, direction, and writing of his first feature-length narrative film titled 'The Return', 35% of which was filmed in 2021 due to the coronavirus pandemic. Upon returning to Syria, he produced and directed a short documentary titled 'Souls on the Other STRAND', which was particularly appreciated by judging committees.",
+    "paragraph6": "Currently, he is in the post-production phase of his first feature-length documentary, along with updates such as resuming filming for 'The Return' in 2026.",
+    "works": [
+      "'Ward - N°6' - Cinematic-theatrical laboratory (2017)",
+      "'Son of the ground' Part One - medium FILM (2018)",
+      "'Son of the ground' Part Two - SHORT FILM (2019)",
+      "'Path of Death' - Series debut as director and writer (2019)",
+      "'The Return' - First feature-length narrative film (2021)",
+      "'Souls on the Other STRAND' - Short Documentary Film (2022)",
+      "'Dream in a Cauldron' - Short Fiction Promotional Film (2022)",
+      "'From the Womb of Fire: The Birth' - Promotional Spot (2022)",
+      "'What is Planted in Our Souls Grows on Our Faces' - Advertising Spot (2022)",
+      "MORALTERROR - Experimental Short Film (2020)",
+      "WINTER PERFUME - MUSIC VIDEO (2020)",
+      "Gypsies of War - Short Promotional Film (2019)",
+      "Essoud Ayouno - MUSIC VIDEO (2019)",
+      "'The Shy' - Short Film - Crime and Thriller (2016)",
+      "'Laswad Magrouni' - Music Video (2017)",
+      "What If - Theater Play (2024)",
+      "Weaning - Narrative Short Film (2024)",
+      "Jury Member - Mediterranean Cinema Festival (2023)"
+    ]
+  },
+  "about": {
+    "title": "ABOUT",
+    "name": "SAMUEL SKHIEH",
+    "role": "DIRECTOR & CINEMATOGRAPHER",
+    "shortBio": "Award-winning filmmaker known for his unique visual style and distinctive narrative approach",
+    "fullBio": "Samuel Skhieh is a distinguished director known for his bold visual style and psychological depth. Beginning his career with experimental short films, he quickly established himself as a visionary in independent cinema.\n\nHis work often explores themes of memory, identity, and human connection through stunning visual compositions and innovative narrative techniques. His unique approach to cinematography has earned him recognition at international film festivals including Cannes, Sundance, and Venice.",
+    "achievementsTitle": "Achievements",
+    "achievements": {
+      "0": "Artistic Director of the 19th Edition of the Mediterranean Cinema Festival in Chénini (Tunisia - Gabès) (2024)"
+    }
+  },
+  "contact": {
+    "title": "CONTACT",
+    "subtitle": "Interested in collaboration or have a project in mind? Feel free to reach out to discuss your vision.",
+    "email": "Email",
+    "representation": "Representation",
+    "agency": "Creative Artists Agency",
+    "location": "Los Angeles, CA",
+    "sendMessage": "Send a Message",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "SEND",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email",
+      "subjectPlaceholder": "Enter message subject",
+      "messagePlaceholder": "Write your message here",
+      "successMessage": "Thank you for your message. We will get back to you soon."
+    }
+  },
+  "footer": {
+    "navigate": "NAVIGATE",
+    "connect": "CONNECT",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  }
+}
