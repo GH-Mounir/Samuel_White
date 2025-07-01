@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import Slideshow from 'yet-another-react-lightbox/plugins/slideshow';
 
 // Define types for better TypeScript support
 interface GalleryImage {
@@ -50,68 +51,75 @@ const galleryImages: GalleryImage[] = [
 
 const Gallery: React.FC = () => {
   const { t } = useTranslation();
-  const [index, setIndex] = useState(-1);
-  const [isMounted, setIsMounted] = useState(false);
+  const [current, setCurrent] = useState(0);
+  const length = galleryImages.length;
+  const timeoutRef = React.useRef<number | null>(null);
 
-  // Add proper dimensions to images (you might want to pre-calculate these)
-  const photos = galleryImages.map((image, i) => ({
-    ...image,
-    alt: `Gallery image ${i + 1}`,
-    // For better performance, pre-calculate or fetch real dimensions
-    // Or use a service like sharp to get dimensions during build
-  }));
-
-  console.log('Gallery images:', galleryImages);
-  console.log('Photos data for PhotoAlbum:', photos);
-  console.log('PhotoAlbum calculated layout:', photos.map(p => ({ src: p.src, width: p.width, height: p.height })));
-
+  // Autoplay logic
   useEffect(() => {
-    setIsMounted(true);
-    return () => setIsMounted(false);
-  }, []);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = window.setTimeout(() => {
+      setCurrent((prev) => (prev + 1) % length);
+    }, 3000);
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, [current, length]);
+
+  const nextSlide = () => setCurrent((current + 1) % length);
+  const prevSlide = () => setCurrent((current - 1 + length) % length);
+  const goToSlide = (idx: number) => setCurrent(idx);
 
   return (
     <section id="gallery" className="bg-black py-20 px-4 sm:px-6 lg:px-8" dir={t('direction')}>
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-12 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wide">
-            {t('gallery.title')}
-          </h2>
-          <div className="w-16 h-1 bg-red-600 mx-auto" />
-        </div>
-
-        {isMounted && (
-          <div style={{ width: '100%', overflow: 'hidden' }}>
-            <PhotoAlbum
-              photos={photos}
-              layout="masonry"
-              columns={(containerWidth) => {
-                if (containerWidth < 640) return 2;
-                if (containerWidth < 1024) return 3;
-                return 4;
-              }}
-              spacing={12}
-              padding={8}
-              onClick={({ index }) => setIndex(index)}
-            />
-
-            <Lightbox
-              open={index >= 0}
-              index={index}
-              close={() => setIndex(-1)}
-              slides={photos}
-              plugins={[Zoom]}
-              animation={{ fade: 300 }}
-              carousel={{
-                finite: true,
-              }}
-              controller={{ closeOnBackdropClick: true }}
-              styles={{
-                container: { backgroundColor: 'rgba(0, 0, 0, 0.9)' },
-              }}
+      <div className="mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wide">
+          {t('gallery')}
+        </h2>
+        <div className="w-16 h-1 bg-red-600 mx-auto" />
+      </div>
+      <div className="slideshow-container relative max-w-3xl mx-auto rounded-lg overflow-hidden shadow-lg bg-black">
+        {galleryImages.map((img, idx) => (
+          <div
+            key={img.src}
+            className={`mySlides fade ${idx === current ? 'block' : 'hidden'}`}
+          >
+            <div className="numbertext absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded text-xs z-10">
+              {idx + 1} / {length}
+            </div>
+            <img
+              src={img.src}
+              alt={img.alt || `Gallery image ${idx + 1}`}
+              className="w-full h-[400px] object-contain object-center bg-black"
             />
           </div>
-        )}
+        ))}
+        {/* Navigation Arrows */}
+        <button
+          className="prev absolute top-1/2 left-2 -translate-y-1/2 text-3xl text-white hover:text-red-600 z-20 bg-black bg-opacity-40 rounded-full px-2 py-1 transition-colors"
+          onClick={prevSlide}
+          aria-label="Previous slide"
+        >
+          &#10094;
+        </button>
+        <button
+          className="next absolute top-1/2 right-2 -translate-y-1/2 text-3xl text-white hover:text-red-600 z-20 bg-black bg-opacity-40 rounded-full px-2 py-1 transition-colors"
+          onClick={nextSlide}
+          aria-label="Next slide"
+        >
+          &#10095;
+        </button>
+      </div>
+      {/* Dots */}
+      <div className="flex justify-center mt-4 space-x-2">
+        {galleryImages.map((_, idx) => (
+          <button
+            key={idx}
+            className={`dot w-3 h-3 rounded-full border-2 border-white ${current === idx ? 'bg-red-600 border-red-600' : 'bg-white bg-opacity-40'} transition-colors`}
+            onClick={() => goToSlide(idx)}
+            aria-label={`Go to slide ${idx + 1}`}
+          />
+        ))}
       </div>
     </section>
   );

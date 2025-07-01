@@ -6,7 +6,7 @@ import Biography from './components/Biography';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import GalleryPage from './pages/GalleryPage';
+import Gallery from './components/Gallery';
 
 function App() {
   useEffect(() => {
@@ -18,12 +18,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <FilmsGrid />
         <Biography />
+        <FilmsGrid />
         <About />
-        <section id="gallery-section">
-          <GalleryPage />
-        </section>
+        <Gallery />
         <Contact />
       </main>
       <Footer />

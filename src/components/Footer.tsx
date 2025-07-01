@@ -76,9 +76,9 @@ const Footer: React.FC = () => {
               <button onClick={() => scrollToSection('about')} className="text-gray-400 hover:text-red-600 transition-colors duration-200 text-sm w-fit">
                 {t('nav.about')}
               </button>
-              <Link to="/gallery" className="text-gray-400 hover:text-red-600 transition-colors duration-200 text-sm w-fit">
+              <button onClick={() => scrollToSection('gallery')} className="text-gray-400 hover:text-red-600 transition-colors duration-200 text-sm w-fit">
                 {t('nav.gallery')}
-              </Link>
+              </button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-400 hover:text-red-600 transition-colors duration-200 text-sm w-fit">
                 {t('nav.contact')}
               </button>
