@@ -17,19 +17,19 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
   const getCategoryTranslation = (category: string) => {
     switch (category) {
       case 'Feature Film':
-        return t('films.categories.featureFilm');
+        return t('projects.categories.featureFilm');
       case 'Documentary':
-        return t('films.categories.documentary');
+        return t('projects.categories.documentary');
       case 'Short Film':
-        return t('films.categories.shortFilm');
+        return t('projects.categories.shortFilm');
       default:
         return category;
     }
   };
 
   const translatedFilm = {
-    title: t(`films.films.${film.title}.title`),
-    description: t(`films.films.${film.title}.description`)
+    title: t(`projects.projects.${film.title}.title`),
+    description: t(`projects.projects.${film.title}.description`)
   };
 
   // Close modal when clicking outside
@@ -69,10 +69,11 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
       onClick={() => setShowModal(true)}
       dir={t('direction')}
     >
-      <div className="aspect-[16/9] overflow-x-auto bg-gray-900">
+      <div className="aspect-[2/3] overflow-hidden bg-gray-900">
         <img 
           src={film.imageUrl} 
-          alt={translatedFilm.title} 
+          alt={translatedFilm.title}
+          className="w-full h-full object-cover"
         />
       </div>
 
@@ -84,26 +85,28 @@ const FilmCard: React.FC<FilmCardProps> = ({ film }) => {
         <div 
           className={`transition-all duration-300 ${isHovered ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'}`}
         >
-          <div className="text-xs font-semibold text-red-600 mb-1">
-            {getCategoryTranslation(film.category)} • {film.year}
+          <div className="bg-black/60 backdrop-blur-sm rounded-lg p-4">
+            <div className="text-xs font-semibold text-red-600 mb-1">
+              {getCategoryTranslation(film.category)} • {film.year}
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2 tracking-wide">
+              {translatedFilm.title}
+            </h3>
+            <p className="text-sm text-gray-300 mb-4 line-clamp-2">
+              {translatedFilm.description}
+            </p>
+            {film.videoUrl && (
+              <a 
+                href={film.videoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-white bg-red-600/30 hover:bg-red-600/50 border border-red-600 px-4 py-2 transition-colors duration-200"
+              >
+                <Play className="w-4 h-4 mr-2" />
+                <span className="text-sm font-medium">{t('projects.watchButton')}</span>
+              </a>
+            )}
           </div>
-          <h3 className="text-xl font-bold text-white mb-2 tracking-wide">
-            {translatedFilm.title}
-          </h3>
-          <p className="text-sm text-gray-300 mb-4 line-clamp-2">
-            {translatedFilm.description}
-          </p>
-          {film.videoUrl && (
-            <a 
-              href={film.videoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-white bg-red-600/30 hover:bg-red-600/50 border border-red-600 px-4 py-2 transition-colors duration-200"
-            >
-              <Play className="w-4 h-4 mr-2" />
-              <span className="text-sm font-medium">{t('films.watchButton')}</span>
-            </a>
-          )}
         </div>
       </div>
 

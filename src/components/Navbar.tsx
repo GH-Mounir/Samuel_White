@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              <button onClick={() => scrollToSection('films')} className="text-gray-300 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors duration-200">{t('nav.films')}</button>
+              <button onClick={() => scrollToSection('projects')} className="text-gray-300 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors duration-200">{t('nav.projects')}</button>
               <button onClick={() => scrollToSection('biography')} className="text-gray-300 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors duration-200">{t('nav.biography')}</button>
               <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors duration-200">{t('nav.about')}</button>
               <a href='#gallery-section' className='text-gray-300 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors duration-200'>{t('nav.gallery')}</a>
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-sm">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <button onClick={() => scrollToSection('films')} className="text-gray-300 hover:text-red-600 block px-3 py-4 text-base font-medium transition-colors duration-200 w-full text-left">{t('nav.films')}</button>
+            <button onClick={() => scrollToSection('projects')} className="text-gray-300 hover:text-red-600 block px-3 py-4 text-base font-medium transition-colors duration-200 w-full text-left">{t('nav.projects')}</button>
             <button onClick={() => scrollToSection('biography')} className="text-gray-300 hover:text-red-600 block px-3 py-4 text-base font-medium transition-colors duration-200 w-full text-left">{t('nav.biography')}</button>
             <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-red-600 block px-3 py-4 text-base font-medium transition-colors duration-200 w-full text-left">{t('nav.about')}</button>
             <a href='#gallery-section' className='text-gray-300 hover:text-red-600 block px-3 py-4 text-base font-medium transition-colors duration-200 w-full text-left'>{t('nav.gallery')}</a>
