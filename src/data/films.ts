@@ -173,3 +173,5 @@ export const projects: Film[] = [
     videoUrl: "https://vimeo.com/1056534588"
   }
 ];
+
+export { projects as films };
