@@ -71,18 +71,18 @@ const Gallery: React.FC = () => {
   const goToSlide = (idx: number) => setCurrent(idx);
 
   return (
-    <section id="gallery" className="bg-black py-20 px-4 sm:px-6 lg:px-8" dir={t('direction')}>
+    <section id="gallery" className="bg-black py-20 px-0 sm:px-0 lg:px-0 w-full" dir={t('direction')}>
       <div className="mb-12 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wide">
           {t('gallery')}
         </h2>
         <div className="w-16 h-1 bg-red-600 mx-auto" />
       </div>
-      <div className="slideshow-container relative max-w-3xl mx-auto rounded-lg overflow-hidden shadow-lg bg-black">
+      <div className="slideshow-container relative w-full rounded-lg overflow-hidden shadow-lg bg-black flex justify-center">
         {galleryImages.map((img, idx) => (
           <div
             key={img.src}
-            className={`mySlides fade ${idx === current ? 'block' : 'hidden'}`}
+            className={`mySlides fade ${idx === current ? 'block' : 'hidden'} w-full`}
           >
             <div className="numbertext absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded text-xs z-10">
               {idx + 1} / {length}
@@ -109,17 +109,6 @@ const Gallery: React.FC = () => {
         >
           &#10095;
         </button>
-      </div>
-      {/* Dots */}
-      <div className="flex justify-center mt-4 space-x-2">
-        {galleryImages.map((_, idx) => (
-          <button
-            key={idx}
-            className={`dot w-3 h-3 rounded-full border-2 border-white ${current === idx ? 'bg-red-600 border-red-600' : 'bg-white bg-opacity-40'} transition-colors`}
-            onClick={() => goToSlide(idx)}
-            aria-label={`Go to slide ${idx + 1}`}
-          />
-        ))}
       </div>
     </section>
   );
