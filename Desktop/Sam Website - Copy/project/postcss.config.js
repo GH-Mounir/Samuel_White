@@ -1,6 +1,9 @@
 export default {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
+    'tailwindcss': {},
+    'autoprefixer': {
+      overrideBrowserslist: ['> 1%', 'last 2 versions', 'not dead'],
+      grid: 'autoplace'
+    }
+  }
+}

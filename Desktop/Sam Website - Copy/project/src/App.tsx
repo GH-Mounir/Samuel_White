@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import FilmsGrid from './components/FilmsGrid';
+import ProjectsGrid from './components/FilmsGrid';
 import Biography from './components/Biography';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -18,14 +18,14 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <FilmsGrid />
         <Biography />
+        <ProjectsGrid />
         <About />
+        <section id="gallery-section">
+          <GalleryPage />
+        </section>
         <Contact />
       </main>
-      <section id="gallery-section">
-        <GalleryPage />
-      </section>
       <Footer />
     </div>
   );

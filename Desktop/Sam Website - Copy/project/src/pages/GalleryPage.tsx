@@ -5,7 +5,6 @@ import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 // Define types for better TypeScript support
 interface GalleryImage {
@@ -80,7 +79,6 @@ const GalleryPage: React.FC = () => {
               return 3;
             }}
             spacing={4}
-            targetRowHeight={200 as any}
             padding={8}
             onClick={({ index }) => setIndex(index)}
             sizes={{
@@ -106,7 +104,6 @@ const GalleryPage: React.FC = () => {
           styles={{ container: { backgroundColor: 'rgba(0, 0, 0, 0.9)' } }}
         />
       </div>
-      <Footer />
     </div>
   );
 };

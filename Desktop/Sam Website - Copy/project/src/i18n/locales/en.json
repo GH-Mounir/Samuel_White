@@ -2,7 +2,7 @@
   "direction": "ltr",
   "nav": {
     "home": "HOME",
-    "films": "FILMS",
+    "projects": "PROJECTS",
     "biography": "BIOGRAPHY",
     "about": "ABOUT",
     "contact": "CONTACT",
@@ -13,8 +13,8 @@
     "subtitle": "DIRECTOR | FILMMAKER",
     "viewWork": "VIEW WORK"
   },
-  "films": {
-    "title": "FILMOGRAPHY",
+  "projects": {
+    "title": "PROJECTS",
     "categories": {
       "all": "ALL",
       "featureFilm": "FEATURE FILM",
@@ -30,7 +30,7 @@
       "juryMember": "JURY MEMBER"
     },
     "watchButton": "WATCH",
-    "films": {
+    "projects": {
       "theOath": {
         "title": "The Oath",
         "description": "The film tells the story of a child caught between cinema and reality, as industrial pollution threatens the natural world."
@@ -114,39 +114,39 @@
     "role": "Independent Filmmaker & Producer, Screenwriter, Actor",
     "quote": "The Godfather became an artistic and productive reference for me, shaping my understanding of cinematic storytelling.",
     "notableWorks": "Notable Works",
-    "paragraph1": "Samuel Skhieh, an independent filmmaker and producer of Syrian origin, was born in 1987 in Latakia, Syria. He studied economics but found his true calling in the arts, beginning his journey in university theater and various independent projects. His passion for cinema was ignited early on, and he was greatly influenced by the film 'The Godfather' by Francis Ford Coppola, which became an artistic and productive reference for him.",
-    "paragraph2": "Since there were no formal film schools in Syria, he started making his own films independently and developed his skills in a self-taught manner. He directed two short films in Syria before moving to Tunisia in 2016 during the Syrian war, continuing to make his independent short films. Between 2017 and 2018, he directed three short films.",
-    "paragraph3": "He worked on the production and direction of a cinematic-theatrical laboratory titled 'Ward - N°6', which received widespread acclaim from the artistic and cultural community. He then ventured into directing music videos and commercials with famous artists, garnering millions of views.",
-    "paragraph4": "He also created a remarkable experience with the violinist and composer Mohamed Al-Gharbi in a two-part musical short film titled 'Son of the ground', the first of its kind in the Arab world celebrating instrumental music. He made his debut in series by directing and writing the first episode of the series 'Path of Death'.",
-    "paragraph5": "He worked on the production, direction, and writing of his first feature-length narrative film titled 'The Return', 35% of which was filmed in 2021 due to the coronavirus pandemic. Upon returning to Syria, he produced and directed a short documentary titled 'Souls on the Other STRAND', which was particularly appreciated by judging committees.",
-    "paragraph6": "Currently, he is in the post-production phase of his first feature-length documentary, along with updates such as resuming filming for 'The Return' in 2026.",
     "works": [
-      "'Ward - N°6' - Cinematic-theatrical laboratory (2017)",
-      "'Son of the ground' Part One - medium FILM (2018)",
-      "'Son of the ground' Part Two - SHORT FILM (2019)",
-      "'Path of Death' - Series debut as director and writer (2019)",
-      "'The Return' - First feature-length narrative film (2021)",
-      "'Souls on the Other STRAND' - Short Documentary Film (2022)",
-      "'Dream in a Cauldron' - Short Fiction Promotional Film (2022)",
-      "'From the Womb of Fire: The Birth' - Promotional Spot (2022)",
-      "'What is Planted in Our Souls Grows on Our Faces' - Advertising Spot (2022)",
+      "Ward - N°6 - Cinematic-theatrical laboratory (2017)",
+      "Son of the ground Part One - medium FILM (2018)",
+      "Son of the ground Part Two - SHORT FILM (2019)",
+      "Path of Death - Series debut as director and writer (2019)",
+      "The Return - First feature-length narrative film (2021)",
+      "Souls on the Other STRAND - Short Documentary Film (2022)",
+      "Dream in a Cauldron - Short Fiction Promotional Film (2022)",
+      "From the Womb of Fire: The Birth - Promotional Spot (2022)",
+      "What is Planted in Our Souls Grows on Our Faces - Advertising Spot (2022)",
       "MORALTERROR - Experimental Short Film (2020)",
       "WINTER PERFUME - MUSIC VIDEO (2020)",
       "Gypsies of War - Short Promotional Film (2019)",
       "Essoud Ayouno - MUSIC VIDEO (2019)",
-      "'The Shy' - Short Film - Crime and Thriller (2016)",
-      "'Laswad Magrouni' - Music Video (2017)",
+      "The Shy - Short Film - Crime and Thriller (2016)",
+      "Laswad Magrouni - Music Video (2017)",
       "What If - Theater Play (2024)",
       "Weaning - Narrative Short Film (2024)",
       "Jury Member - Mediterranean Cinema Festival (2023)"
-    ]
+    ],
+    "paragraph1": "Samuel Skhieh is an independent Syrian director and producer, born in 1987 in Latakia, where he studied economics. He began his artistic career as an actor and director in university theater and various independent projects. His passion for cinema was deeply rooted from an early age, particularly influenced by Francis Ford Coppola's film The Godfather, which became a key artistic and production reference for him.",
+    "paragraph2": "He directed two short films in Syria before moving to Tunisia. During the Syrian war in 2016, he continued to make independent short films, and between 2017 and 2018, he directed three short films. He also directed and managed a cinema-theater workshop titled Ward No. 6, based on the famous story by Anton Chekhov. The project received wide acclaim from the artistic and cultural community for its deep exploration of the human and psychological dimensions within the setting of a mental hospital.",
+    "paragraph3": "After 2017, Samuel began working in music video and commercial directing in collaboration with well-known artists, achieving millions of views. He also worked as an artistic producer and executor for several promotional films for major industrial companies in Syria, which strengthened his skills in creative production.",
+    "paragraph4": "He created a unique experience in collaboration with musician and composer Mohamed Al-Gharbi in a two-part short musical film titled Son of the Earth, which is the first of its kind in the Arab world celebrating instrumental music.",
+    "paragraph5": "He also participated in directing several series as part of the Episode Zero project and contributed to writing workshops that introduced new ideas and creative visions. In 2021, he began shooting his first feature film titled The Return, completing about 35% of filming before it was halted due to the COVID-19 pandemic.",
+    "paragraph6": "After returning to Syria, he produced and directed a short documentary titled Souls on the Other Shore, which received special recognition from juries. In 2024, he produced and directed a short film titled The Oath, and served as the artistic director of the 19th edition of a film festival in Tunisia, where he helped achieve a notable advancement in the festival's level. He is currently working on his first feature-length documentary titled The New Saints, which is in post-production and expected to be released in 2025."
   },
   "about": {
     "title": "ABOUT",
     "name": "SAMUEL SKHIEH",
     "role": "DIRECTOR & CINEMATOGRAPHER",
-    "shortBio": "Award-winning filmmaker known for his unique visual style and distinctive narrative approach",
-    "fullBio": "Samuel Skhieh is a distinguished director known for his bold visual style and psychological depth. Beginning his career with experimental short films, he quickly established himself as a visionary in independent cinema.\n\nHis work often explores themes of memory, identity, and human connection through stunning visual compositions and innovative narrative techniques. His unique approach to cinematography has earned him recognition at international film festivals including Cannes, Sundance, and Venice.",
+    "shortBio": "I am Samuel Skhieh, an independent director, writer, and producer from Syria, deeply rooted in the tradition of auteur cinema. I believe that cinema is not just an art form, but a moral test ... a way to face ourselves without excuses and to reveal the fragile yet resilient human soul.",
+    "fullBio": "I am Samuel Skhieh, an independent director, writer, and producer from Syria, deeply rooted in the tradition of auteur cinema. I believe that cinema is not just an art form, but a moral test ... a way to face ourselves without excuses and to reveal the fragile yet resilient human soul.\n\nGrowing up amid conflict and the absence of formal film schools,\nI carved my path through self-learning and constant experimentation, inspired by great directors like Francis Ford Coppola. My films aim to reflect the stories of those who care about what others overlook stories..... of compassion, struggle, and hope.\n\nAs the founder of the independent production company Sam Will Art\nI channel my vision into projects that pulse with authenticity and emotional honesty. I see the camera as an instrument of love, always placing it at eye level with my subjects ... whether human, animal, or plant... to capture the raw truth of life without embellishment, but with deep sincerity.\n\nMy work is a continuous journey in crafting cinema that breathes and bleeds  honest, fragile, defiant, and full of hope .... a mirror to the world's complexities and the quiet acts of sanctity within it.",
     "achievementsTitle": "Achievements",
     "achievements": {
       "0": "Artistic Director of the 19th Edition of the Mediterranean Cinema Festival in Chénini (Tunisia - Gabès) (2024)"
